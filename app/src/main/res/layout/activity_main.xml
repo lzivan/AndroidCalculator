@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -38,31 +38,34 @@
                 android:id="@+id/btnone"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="oneBtn"
 
-                android:text="@string/one" />
+                android:text="@string/one"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btntwo"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="twoBtn"
 
-                android:text="@string/two" />
+                android:text="@string/two"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnthree"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="threeBtn"
 
-                android:text="@string/three" />
+                android:text="@string/three"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -73,31 +76,34 @@
                 android:id="@+id/btnfour"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="fourBtn"
 
-                android:text="@string/four" />
+                android:text="@string/four"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnfive"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="fiveBtn"
 
-                android:text="@string/five" />
+                android:text="@string/five"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnsix"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="sixBtn"
 
-                android:text="@string/six" />
+                android:text="@string/six"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -108,31 +114,34 @@
                 android:id="@+id/btnseven"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="sevenBtn"
 
-                android:text="@string/seven" />
+                android:text="@string/seven"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btneight"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="eightBtn"
 
-                android:text="@string/eight" />
+                android:text="@string/eight"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnnine"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="nineBtn"
 
-                android:text="@string/nine" />
+                android:text="@string/nine"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -143,21 +152,23 @@
                 android:id="@+id/btnzero"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="zeroBtn"
 
-                android:text="@string/zero" />
+                android:text="@string/zero"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnPoint"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="pointBtn"
 
-                android:text="@string/point" />
+                android:text="@string/point"
+                android:textSize="24sp" />
 
         </TableRow>
 
@@ -169,31 +180,34 @@
                 android:id="@+id/btnAdd"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="plusBtn"
 
-                android:text="@string/add" />
+                android:text="@string/add"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnSub"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="minusBtn"
 
-                android:text="@string/sub" />
+                android:text="@string/sub"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnTimes"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="multiplyBtn"
 
-                android:text="@string/times" />
+                android:text="@string/times"
+                android:textSize="24sp" />
 
         </TableRow>
 
@@ -205,30 +219,33 @@
                 android:id="@+id/btnDiv"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="divideBtn"
 
-                android:text="@string/div" />
+                android:text="@string/div"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnSqrt"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
+                android:layout_weight="1"
+                android:onClick="sqrtBtn"
 
-                android:text="@string/square" />
+                android:text="@string/square"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnEqual"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_weight="2"
                 android:layout_margin="5dp"
-                android:textSize="24sp"
-                android:text="@string/equal" />
+                android:layout_weight="2"
+                android:onClick="equalBtn"
+                android:text="@string/equal"
+                android:textSize="24sp" />
         </TableRow>
     </TableLayout>
 
