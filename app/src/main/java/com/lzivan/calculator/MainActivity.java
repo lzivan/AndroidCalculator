@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import org.mariuszgromada.math.mxparser.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         } else{
             inputBox.setText(String.format("%s%s%s", left, newInput, right));
         }
-        if (newInput.equals("Sqrt()"))
+        if (newInput.equals("sqrt()"))
             inputBox.setSelection(cursorPos + 5);
         else
             inputBox.setSelection(cursorPos + 1);
@@ -106,11 +107,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sqrtBtn(View view){
-        updateInput("Sqrt()");
+        updateInput("sqrt()");
     }
 
     public void equalBtn(View view){
+        String expression = inputBox.getText().toString();
+        Expression exp = new Expression(expression);
+        String output = String.valueOf(exp.calculate());
 
+        inputBox.setText(output);
+        inputBox.setSelection(output.length());
     }
 
 }
