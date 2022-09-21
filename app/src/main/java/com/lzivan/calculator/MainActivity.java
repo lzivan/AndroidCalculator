@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        inputBox = findViewById(R.id.textView);
+        inputBox = findViewById(R.id.input);
         inputBox.setShowSoftInputOnFocus(false);
 
         inputBox.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +109,11 @@ public class MainActivity extends AppCompatActivity {
     public void sqrtBtn(View view){
         updateInput("sqrt()");
     }
+
+    public void clearBtn(View view){
+        inputBox.setText("");
+    }
+
 
     public void equalBtn(View view){
         String expression = inputBox.getText().toString();
